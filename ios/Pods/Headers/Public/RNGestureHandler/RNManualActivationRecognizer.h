@@ -1,10 +1,1 @@
-#import <UIKit/UIGestureRecognizerSubclass.h>
-
-@class RNGestureHandler;
-
-@interface RNManualActivationRecognizer : UIGestureRecognizer <UIGestureRecognizerDelegate>
-
-- (id)initWithGestureHandler:(RNGestureHandler *)gestureHandler;
-- (void)fail;
-
-@end
+../../../../../node_modules/react-native-gesture-handler/ios/RNManualActivationRecognizer.h

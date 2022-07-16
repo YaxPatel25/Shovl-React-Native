@@ -1,5 +1,1 @@
-#import <RNReanimated/REANode.h>
-
-@interface REAOperatorNode : REANode
-
-@end
+../../../../../node_modules/react-native-reanimated/ios/Nodes/REAOperatorNode.h

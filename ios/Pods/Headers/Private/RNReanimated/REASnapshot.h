@@ -1,13 +1,1 @@
-#import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface REASnapshot : NSObject
-
-@property NSMutableDictionary *values;
-
-- (instancetype)init:(UIView *)view;
-
-@end
-
-NS_ASSUME_NONNULL_END
+../../../../../node_modules/react-native-reanimated/ios/LayoutReanimation/REASnapshot.h

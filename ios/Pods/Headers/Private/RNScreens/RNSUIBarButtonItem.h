@@ -1,5 +1,1 @@
-@interface RNSUIBarButtonItem : UIBarButtonItem
-
-@property (nonatomic) BOOL menuHidden;
-
-@end
+../../../../../node_modules/react-native-screens/ios/utils/RNSUIBarButtonItem.h

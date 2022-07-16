@@ -1,36 +1,50 @@
 import React, { useState } from "react";
-import { StyleSheet, TextInput, View, Text, Image, TouchableOpacity, KeyboardAvoidingView } from "react-native";
+import { StyleSheet, TextInput, View, Text, Image, TouchableOpacity, KeyboardAvoidingView,  Alert} from "react-native";
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import {singInUserFirebase} from '../services/authApi';
+
 
 
 const LoginScreen = ({ navigation }: {navigation: any}) => {
-  const [email, setEmail] = useState<String>("");
-  const [password, setPassword] = useState<String>("");
-  const [error, setError] = useState<Boolean>(false);
-  const [errorMsg, setErrorMsg] = useState<String>("");
 
+  const [username, setUsername] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const [error, setError] = useState<Boolean>(false);
+  const [errorMsg, setErrorMsg] = useState<string>('');
 
   const resetError = () => {
     setError(false);
-    setErrorMsg("");
+    setErrorMsg('');
   };
 
-
-  const handleLogin = () => {
-    if (email === "") {
-      setErrorMsg("Email is Empty");
+  async function handleLogin() {
+    if (username === '') {
+      setErrorMsg('Username is Empty');
       setError(true);
       return;
     }
-    if (password === "") {
-      setErrorMsg("Password is Empty");
+    if (password === '') {
+      setErrorMsg('Password is Empty');
       setError(true);
       return;
     }
-    setErrorMsg("");
+    setErrorMsg('');
     setError(false);
+    try {
+      await singInUserFirebase(username, password)
+        .then(userCred => {
+          Alert.alert('Login Success');
+          console.log(userCred.user.uid);
+        })
+        .catch(error => {
+          Alert.alert(`Error ${error}`);
+        });
+    } catch (error) {
+      Alert.alert(`Error ${error}`);
+    }
+  }
 
-  };
+
   return (
     <View style={styles.mainBody}>
       <View>
@@ -40,7 +54,7 @@ const LoginScreen = ({ navigation }: {navigation: any}) => {
           </View>
           <Text style={styles.errorTextStyle}>{errorMsg}</Text>
           <View style={styles.SectionStyle}>
-            <TextInput style={styles.inputStyle} onChange={resetError} placeholder={"Enter email address"} onChangeText={setEmail} clearTextOnFocus />
+            <TextInput style={styles.inputStyle} onChange={resetError} placeholder={"Enter email address"} onChangeText={setUsername} clearTextOnFocus />
           </View>
           <View style={styles.SectionStyle}>
             <TextInput style={styles.inputStyle} onChange={resetError} onChangeText={setPassword} placeholder="Enter Password" clearTextOnFocus inlineImageLeft="favicon" secureTextEntry={true} />

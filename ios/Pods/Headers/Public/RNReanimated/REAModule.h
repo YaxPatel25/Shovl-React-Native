@@ -1,14 +1,1 @@
-#import <React/RCTBridgeModule.h>
-#import <React/RCTEventDispatcher.h>
-#import <React/RCTEventEmitter.h>
-#import <React/RCTUIManager.h>
-#import <React/RCTUIManagerObserverCoordinator.h>
-#import <React/RCTUIManagerUtils.h>
-
-#import <RNReanimated/REAValueNode.h>
-
-@interface REAModule : RCTEventEmitter <RCTBridgeModule, RCTEventDispatcherObserver, RCTUIManagerObserver>
-
-@property (nonatomic, readonly) REANodesManager *nodesManager;
-
-@end
+../../../../../node_modules/react-native-reanimated/ios/REAModule.h

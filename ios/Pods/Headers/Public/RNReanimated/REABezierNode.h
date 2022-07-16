@@ -1,5 +1,1 @@
-#import <RNReanimated/REANode.h>
-
-@interface REABezierNode : REANode
-
-@end
+../../../../../node_modules/react-native-reanimated/ios/Nodes/REABezierNode.h
