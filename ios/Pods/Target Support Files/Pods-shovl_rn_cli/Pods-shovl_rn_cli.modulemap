@@ -1,0 +1,6 @@
+module Pods_shovl_rn_cli {
+  umbrella header "Pods-shovl_rn_cli-umbrella.h"
+
+  export *
+  module * { export * }
+}
