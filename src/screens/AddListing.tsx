@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Text, View, StyleSheet, TouchableOpacity, Image, ScrollView, SafeAreaView, ImageBackground, TextInput, Alert } from "react-native";
 
 import { FontAwesome5 } from "react-native-vector-icons/FontAwesome5";
 
 
 const AddListing = ({ navigation, route}: {navigation: any,route: any}) => {
-    const addListings = () => {
-       Alert.alert("Added Successfully! You can see your post in Home Screen")
-      };
+      const [title, setTitle] = useState<string>('');
+      const [description, setDescription] = useState<string>('');
+      const [addres, setAddress] = useState<string>('');
+      const [fromDate, setFromDate] = useState<string>('');
+      const [toDate, setToDate] = useState<string>('');
+      const [fromTime, setFromTime] = useState<string>('');
+      const [toTime, setToTime] = useState<string>('');
+      const [images, setImages] = useState([]);
 
+    const addListings = () => {
+        //call firestore database here to store data in database
+       Alert.alert("Added Successfully! You can see your post in Home Screen")
+
+      };
       const signout = () => {
         Alert.alert("Attention \n", " Do you really want to sign out!", [
           {
@@ -43,9 +53,10 @@ const AddListing = ({ navigation, route}: {navigation: any,route: any}) => {
         {/* Body part Starts */}
         <View style={styles.formElements}>
         <View style={styles.labelName}>
-                <Text style={{ width: "30%",fontWeight:"bold",fontSize:18 }}>Title:</Text>
+                <Text style={{ width: "30%",fontWeight:"bold",fontSize:18 } } >Title:</Text>
                 <TextInput
                     style={styles.textInput}
+                    onChangeText={setTitle}
                     placeholder=" Enter Title"
                 />
             </View>
@@ -54,6 +65,7 @@ const AddListing = ({ navigation, route}: {navigation: any,route: any}) => {
                 <Text style={{ width: "30%",fontWeight:"bold",fontSize:18 }}>Address:</Text>
                 <TextInput
                     style={styles.textInput}
+                    onChangeText={setAddress}
                     placeholder=" Enter Address"
                 />
             </View>
@@ -61,7 +73,10 @@ const AddListing = ({ navigation, route}: {navigation: any,route: any}) => {
                 <Text style={{ width: "30%",fontWeight:"bold",fontSize:18 }}>Description</Text>
 
                 <TextInput style={styles.textDescription}
-                    multiline={true} numberOfLines={4} placeholder=" Description of the property."
+                    multiline={true} 
+                    numberOfLines={4} 
+                    onChangeText={setDescription}
+                    placeholder=" Description of the property."
                 /></View>
             <View style={styles.labelName}>
                 <Text style={{fontWeight:"bold",fontSize:18 ,textAlign:"center",width:"50%",marginVertical:7}}>From Date:</Text>
@@ -71,10 +86,12 @@ const AddListing = ({ navigation, route}: {navigation: any,route: any}) => {
             <View style={styles.labelName}>
             <TextInput
                     style={styles.textInput}
+                    onChangeText={setFromDate}
                     placeholder="mm/dd/yyy"
                 />
                 <TextInput
                     style={styles.textInput}
+                    onChangeText={setToDate}
                     placeholder="mm/dd/yyy"
                 />
             </View>
@@ -86,10 +103,12 @@ const AddListing = ({ navigation, route}: {navigation: any,route: any}) => {
             <View style={styles.labelName}>
             <TextInput
                     style={styles.textInput}
+                    onChangeText={setFromTime}
                     placeholder="HH:MM"
                 />
                 <TextInput
                     style={styles.textInput}
+                    onChangeText={setToTime}
                     placeholder="HH:MM"
                 />
             </View>
