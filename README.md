@@ -13,4 +13,4 @@ Shovl is a mobile application implemented using react-native that provide snow c
   * Bottom Navigation added and refactored into a component
   * Static html list items were moved to a Flatlist and populated dynamically
 * Use component lifecycle hooks to fulfill the business logic
-  * UseEffect was used to populate FlatList items in home page
+  * Lifecycle hooks was used to populate FlatList items in home page
