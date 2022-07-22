@@ -1,18 +1,69 @@
 import React, { useState } from "react";
-import { StyleSheet, TextInput, View, Text, ScrollView, TouchableOpacity, KeyboardAvoidingView } from "react-native";
-import { FontAwesome5 } from "react-native-vector-icons/FontAwesome5";
+import { StyleSheet, TextInput, View, Text, ScrollView, TouchableOpacity, KeyboardAvoidingView, Alert } from "react-native";
+import  FontAwesome5  from "react-native-vector-icons/FontAwesome5";
+import { singUpUserFirebase } from "../services/authApi";
+
 const SignUpScreen = ({ navigation }: {navigation: any}) => {
-  const [name, setName] = useState<String>("");
-  const [password, setPassword] = useState<String>("");
-  const [email, setEmail] = useState<String>("");
-  const [confirmPassword, setconfirmPassword] = useState<String>("");
+  const [name, setName] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [confirmPassword, setconfirmPassword] = useState<string>("");
   const [error, setError] = useState<Boolean>(false);
-  const [errorMsg, setErrorMsg] = useState<String>("");
+  const [errorMsg, setErrorMsg] = useState<string>("");
 
   const resetError = () => {
     setError(false);
     setErrorMsg("");
   };
+
+  async function handleSignUP() {
+    if (name === "") {
+      setErrorMsg("Name is Empty");
+      setError(true);
+      return;
+    }
+    if (password === "") {
+      setErrorMsg("Password is Empty");
+      setError(true);
+      return;
+    }
+    if (email === "") {
+      setErrorMsg("Email is Empty");
+      setError(true);
+      return;
+    }
+    if (confirmPassword === "") {
+      setErrorMsg("Confirm Password is Empty");
+      setError(true);
+      return;
+    }
+    if (password != confirmPassword) {
+      setErrorMsg("Password and Confirm Password Does not match");
+      setError(true);
+      return;
+    }
+    setErrorMsg("");
+    setError(false);
+
+    try {
+      await singUpUserFirebase(email, password,name)
+        .then(userCred => {
+          Alert.alert('Sign up Success');
+          console.log(userCred.user.uid);
+        })
+        .catch(error => {
+          Alert.alert(`Error ${error}`);
+        });
+    } catch (error) {
+      Alert.alert(`Error ${error}`);
+    }
+
+    navigation.reset({
+      index: 0,
+      routes: [{ name: "login" }],
+    });
+    
+  }
 
   const handleSubmit = () => {
     if (name === "") {
@@ -43,11 +94,14 @@ const SignUpScreen = ({ navigation }: {navigation: any}) => {
     setErrorMsg("");
     setError(false);
 
+    
+
     navigation.reset({
       index: 0,
       routes: [{ name: "login" }],
     });
   };
+
   return (
     <View style={styles.mainBody}>
       <View style={{ flex: 0.2 }}></View>
@@ -64,16 +118,16 @@ const SignUpScreen = ({ navigation }: {navigation: any}) => {
             <TextInput style={styles.inputStyle} onChange={resetError} onChangeText={setEmail} placeholder="Enter Email" clearTextOnFocus />
           </View>
           <View style={styles.SectionStyle}>
-            <TextInput style={styles.inputStyle} onChange={resetError} onChangeText={setPassword} placeholder="Password" clearTextOnFocus />
+            <TextInput style={styles.inputStyle} onChange={resetError} onChangeText={setPassword} placeholder="Password" clearTextOnFocus secureTextEntry={true} />
           </View>
           <View style={styles.SectionStyle}>
-            <TextInput style={styles.inputStyle} onChange={resetError} onChangeText={setconfirmPassword} placeholder="Re-Enter Password" clearTextOnFocus />
+            <TextInput style={styles.inputStyle} onChange={resetError} onChangeText={setconfirmPassword} placeholder="Re-Enter Password" clearTextOnFocus secureTextEntry={true} />
           </View>
           <TouchableOpacity
             style={styles.buttonStyle}
             activeOpacity={0.5}
             onPress={() => {
-              handleSubmit();
+              handleSignUP();
             }}
           >
             <Text style={styles.buttonTextStyle}>Sign Up</Text>
@@ -96,6 +150,7 @@ const SignUpScreen = ({ navigation }: {navigation: any}) => {
     </View>
   );
 };
+
 export default SignUpScreen;
 
 const styles = StyleSheet.create({

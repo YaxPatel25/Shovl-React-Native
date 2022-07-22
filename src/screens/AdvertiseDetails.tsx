@@ -6,6 +6,8 @@ import { FontAwesome5 } from "react-native-vector-icons/FontAwesome5";
 
 
 const AdvertiseDetails = ({ navigation, route}: {navigation: any,route: any}) => {
+  const postDetails = route.params
+  
       const signout = () => {
         Alert.alert("Attention \n", " Do you really want to sign out!", [
           {
@@ -44,7 +46,7 @@ const AdvertiseDetails = ({ navigation, route}: {navigation: any,route: any}) =>
         <View style={styles.formElements}>
         <View style={styles.labelName}>
             <Text style={{ width: "30%",fontWeight:"bold",fontSize:18 }}>Posted By:</Text>
-            <Text style={{ width: "70%",fontSize:16 }}>John Markson</Text>
+            <Text style={{ width: "70%",fontSize:16 }}>{postDetails.postedBy}</Text>
                 
         </View>
         <View style={styles.labelName}>
@@ -55,11 +57,11 @@ const AdvertiseDetails = ({ navigation, route}: {navigation: any,route: any}) =>
         </View>
             <View style={styles.labelName}>
                 <Text style={{ width: "30%",fontWeight:"bold",fontSize:18 }}>Address:</Text>
-                <Text style={{ width: "70%",fontSize:16,padding:5 }}>22, Georgian Drive, Barrie, Ontario</Text>
+                <Text style={{ width: "70%",fontSize:16,padding:5 }}>{postDetails.location}</Text>
             </View>
             <View style={styles.labelName}>
                 <Text style={{ width: "30%",fontWeight:"bold",fontSize:18 }}>Description:</Text>
-                <Text style={{ width: "70%",fontSize:16,padding:5}}>This walk way in front of the house which needs to be cleaned as soon as possible.</Text>
+                <Text style={{ width: "70%",fontSize:16,padding:5}}>{postDetails.description}</Text>
                 </View>
             <View style={styles.labelName}>
                 <Text style={{fontWeight:"bold",fontSize:18 ,textAlign:"center",width:"50%",marginVertical:7}}>From Date:</Text>

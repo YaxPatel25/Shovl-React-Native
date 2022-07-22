@@ -10,13 +10,14 @@ import HomeScreen from "../screens/Home";
 import ConfirmShovelerScreen from "../screens/ConfirmShoveler";
 import AddListing from "../screens/AddListing";
 import ProfileScreen from "../screens/Profile";
+import HomeTabNavStack from "./HomeTabNavStack";
 
 
 const Tab = createBottomTabNavigator();
 
 export const BottomNavigator = ({ route }: {route: any}) => {
-  const username = route.params.username;
-
+  //const username = route.params.username;
+  //console.log("user name is ", username);
   return (
     <Tab.Navigator
       initialRouteName={"home"}
@@ -34,8 +35,8 @@ export const BottomNavigator = ({ route }: {route: any}) => {
         tabBarActiveTintColor: "white",
       }}
     >
-      <Tab.Screen name="home" component={HomeScreen}
-       options={{ headerShown: false, title: "Homescreen", tabBarIcon: ({ color }) => <FontAwesome name="list" size={24} color={"white"} /> }} initialParams={{ username: username }} />
+      <Tab.Screen name="home" component={HomeTabNavStack}
+       options={{ headerShown: false, title: "Homescreen", tabBarIcon: ({ color }) => <FontAwesome name="list" size={24} color={"white"} /> }} />
       
       <Tab.Screen name="calendar" component={AddListing}
        options={{ headerShown: false,title: "Add Listing", tabBarIcon: () => <FontAwesome name="plus" size={24} style={{color:"white"}} /> }} />

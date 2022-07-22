@@ -35,6 +35,11 @@ const LoginScreen = ({ navigation }: {navigation: any}) => {
         .then(userCred => {
           Alert.alert('Login Success');
           console.log(userCred.user.uid);
+          navigation.reset({
+          index: 0,
+          //routes: [{ name: "bottomNav"}],
+          routes: [{ name: "bottomNav", params: { username } }],
+        });
         })
         .catch(error => {
           Alert.alert(`Error ${error}`);
@@ -42,6 +47,9 @@ const LoginScreen = ({ navigation }: {navigation: any}) => {
     } catch (error) {
       Alert.alert(`Error ${error}`);
     }
+
+    
+
   }
 
 

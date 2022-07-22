@@ -15,6 +15,7 @@ import BidPricing from "./src/screens/BidPricing";
 import AdvertiseDetails from "./src/screens/AdvertiseDetails";
 import Payment from "./src/screens/Payment";
 import ConfirmShovelerScreen from "./src/screens/ConfirmShoveler";
+import HomeScreen from './src/screens/Home';
 
 const MainStack = createNativeStackNavigator();
 
@@ -22,6 +23,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
+  
       <MainStack.Navigator initialRouteName="onboarding_1" screenOptions={{ headerShown: false }}>
         <MainStack.Screen name="login" component={LoginScreen} />
         <MainStack.Screen name="signUp" component={SignUpScreen} />
@@ -34,6 +36,7 @@ export default function App() {
         <MainStack.Screen name="ConfirmShovelerScreen" component={ConfirmShovelerScreen} />
         <MainStack.Screen name="BidPricing" component={BidPricing} />
         <MainStack.Screen name="Payment" component={Payment} />
+        <MainStack.Screen name="home" component={HomeScreen} />
       </MainStack.Navigator>
     </NavigationContainer>
   );

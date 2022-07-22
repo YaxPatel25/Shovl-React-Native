@@ -11,3 +11,11 @@ export async function singInUserFirebase(
 ): Promise<any> {
   return auth().signInWithEmailAndPassword(username, password);
 }
+
+export async function singUpUserFirebase(
+  username: string,
+  password: string,
+  name : string
+): Promise<any> {
+  return auth().createUserWithEmailAndPassword(username, password);
+}
