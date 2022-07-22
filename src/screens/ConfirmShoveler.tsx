@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, StyleSheet, TouchableOpacity, ScrollView, Alert } from "react-native";
 
-import { FontAwesome5 } from "react-native-vector-icons/FontAwesome5";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 
 const ConfirmShovelerScreen = ({ navigation, route}: {navigation: any,route: any}) => {
@@ -54,9 +54,14 @@ const ConfirmShovelerScreen = ({ navigation, route}: {navigation: any,route: any
     
     <View style={styles.wrapper}>
         <View style={styles.menu}>
+            <TouchableOpacity activeOpacity={0.5} 
+                  onPress={() => navigation.navigate("Home")}
+            >
+                  <FontAwesome5 name="arrow-left" size = {22} color ="white"/>
+            </TouchableOpacity>
             <Text style={styles.tag}>Confirm Shoveler</Text>
             <TouchableOpacity activeOpacity={0.5} onPress={() => {signout();}} >
-                <FontAwesome5 name="power-off" style={{fontSize:25,color:"white"}}/>
+                <FontAwesome5 name="power-off" size = {25} color = "white"/>
             </TouchableOpacity>
         </View>
         {/* End of navigation */}
@@ -70,7 +75,7 @@ const ConfirmShovelerScreen = ({ navigation, route}: {navigation: any,route: any
               </View>
          
               <TouchableOpacity activeOpacity={0.5} onPress={() => { acceptShoveler(); }} >
-                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" style={{color:"white",opacity:0.5,fontSize:16}}/>
+                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" color="white" opacity ={0.5} size={16}/>
                     Accept</Text>
               </TouchableOpacity>
               <TouchableOpacity activeOpacity={0.5} onPress={() => { rejectShoveler(); }}>
@@ -86,7 +91,7 @@ const ConfirmShovelerScreen = ({ navigation, route}: {navigation: any,route: any
               </View>
          
               <TouchableOpacity activeOpacity={0.5} onPress={() => { acceptShoveler(); }} >
-                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" style={{color:"white",opacity:0.5,fontSize:16}}/>
+                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" color="white" opacity ={0.5} size={16}/>
                     Accept</Text>
               </TouchableOpacity>
               <TouchableOpacity activeOpacity={0.5} onPress={() => { rejectShoveler(); }}>
@@ -101,7 +106,7 @@ const ConfirmShovelerScreen = ({ navigation, route}: {navigation: any,route: any
               </View>
          
               <TouchableOpacity activeOpacity={0.5} onPress={() => { acceptShoveler(); }} >
-                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" style={{color:"white",opacity:0.5,fontSize:16}}/>
+                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" color="white" opacity ={0.5} size={16}/>
                     Accept</Text>
               </TouchableOpacity>
               <TouchableOpacity activeOpacity={0.5} onPress={() => { rejectShoveler();}}>
@@ -116,7 +121,7 @@ const ConfirmShovelerScreen = ({ navigation, route}: {navigation: any,route: any
               </View>
          
               <TouchableOpacity activeOpacity={0.5} onPress={() => { acceptShoveler(); }} >
-                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" style={{color:"white",opacity:0.5,fontSize:16}}/>
+                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" color="white" opacity ={0.5} size={16}/>
                     Accept</Text>
               </TouchableOpacity>
               <TouchableOpacity activeOpacity={0.5} onPress={() => { rejectShoveler(); }}>
@@ -131,7 +136,7 @@ const ConfirmShovelerScreen = ({ navigation, route}: {navigation: any,route: any
               </View>
          
               <TouchableOpacity activeOpacity={0.5} onPress={() => { acceptShoveler(); }} >
-                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" style={{color:"white",opacity:0.5,fontSize:16}}/>
+                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" color="white" opacity ={0.5} size={16}/>
                     Accept</Text>
               </TouchableOpacity>
               <TouchableOpacity activeOpacity={0.5} onPress={() => { rejectShoveler(); }}>
@@ -146,7 +151,7 @@ const ConfirmShovelerScreen = ({ navigation, route}: {navigation: any,route: any
               </View>
          
               <TouchableOpacity activeOpacity={0.5} onPress={() => { acceptShoveler(); }} >
-                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" style={{color:"white",opacity:0.5,fontSize:16}}/>
+                    <Text style={styles.buttonStyle}><FontAwesome5 color="white" opacity ={0.5} size={16}/>
                     Accept</Text>
               </TouchableOpacity>
               <TouchableOpacity activeOpacity={0.5} onPress={() => { rejectShoveler(); }}>
@@ -161,7 +166,7 @@ const ConfirmShovelerScreen = ({ navigation, route}: {navigation: any,route: any
               </View>
          
               <TouchableOpacity activeOpacity={0.5} onPress={() => { acceptShoveler(); }} >
-                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" style={{color:"white",opacity:0.5,fontSize:16}}/>
+                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" color="white" opacity ={0.5} size={16}/>
                     Accept</Text>
               </TouchableOpacity>
               <TouchableOpacity activeOpacity={0.5} onPress={() => { rejectShoveler(); }}>
@@ -176,7 +181,7 @@ const ConfirmShovelerScreen = ({ navigation, route}: {navigation: any,route: any
               </View>
          
               <TouchableOpacity activeOpacity={0.5} onPress={() => { acceptShoveler(); }} >
-                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" style={{color:"white",opacity:0.5,fontSize:16}}/>
+                    <Text style={styles.buttonStyle}><FontAwesome5 name="check" color="white" opacity ={0.5} size={16}/>
                     Accept</Text>
               </TouchableOpacity>
               <TouchableOpacity activeOpacity={0.5} onPress={() => { rejectShoveler(); }}>

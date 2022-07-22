@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Text, View, StyleSheet, TouchableOpacity, Image, ScrollView, SafeAreaView, ImageBackground, TextInput, Alert } from "react-native";
 
-import { FontAwesome5 } from "react-native-vector-icons/FontAwesome5";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 
 const AddListing = ({ navigation, route}: {navigation: any,route: any}) => {
@@ -47,7 +47,7 @@ const AddListing = ({ navigation, route}: {navigation: any,route: any}) => {
         <View style={styles.menu}>
             <Text style={styles.tag}>Add Listing</Text>
             <TouchableOpacity activeOpacity={0.5} onPress={() => {signout();
-          }} ><FontAwesome5 name="power-off" style={{fontSize:25,color:"white"}}/></TouchableOpacity>
+          }} ><FontAwesome5 name="power-off" size = {25} color = "white"/></TouchableOpacity>
         </View>
         {/* End of navigation */}
         {/* Body part Starts */}
@@ -126,8 +126,7 @@ const AddListing = ({ navigation, route}: {navigation: any,route: any}) => {
                     style={{width: 100, height:100,marginLeft:20}}
                 />
                 
-                 <FontAwesome5 name="plus" style={{color:"black",opacity:0.5,fontSize:80,marginLeft:20}}
-                />
+                 <FontAwesome5 name="plus" color= "black" opacity = {0.} size={80} marginLeft={20}/>
             </View> }
             <View style={styles.flexrow}>
                 <TouchableOpacity activeOpacity={0.5}

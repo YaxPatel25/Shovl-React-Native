@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View, StyleSheet, TouchableOpacity, Image, ScrollView, SafeAreaView, ImageBackground, TextInput, Alert } from "react-native";
 
 
-import { FontAwesome5 } from "react-native-vector-icons/FontAwesome5";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 
 const AdvertiseDetails = ({ navigation, route}: {navigation: any,route: any}) => {
@@ -35,11 +35,11 @@ const AdvertiseDetails = ({ navigation, route}: {navigation: any,route: any}) =>
     <View style={styles.wrapper}>
         <View style={styles.menu}>
         <TouchableOpacity activeOpacity={0.5} onPress={() => { navigation.goBack(); }}>
-            <FontAwesome5 name="arrow-left" style={{fontSize:22,color:"white"}}/>
+            <FontAwesome5 name="arrow-left" size={22} color="white"/>
         </TouchableOpacity>
             <Text style={styles.tag}>Advertise Details</Text>
             <TouchableOpacity activeOpacity={0.5} onPress={() => {signout();
-          }} ><FontAwesome5 name="power-off" style={{fontSize:25,color:"white"}}/></TouchableOpacity>
+          }} ><FontAwesome5 name="power-off" size={25} color="white"/></TouchableOpacity>
         </View>
         {/* End of navigation */}
         {/* Body part Starts */}

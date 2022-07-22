@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Text,Button, View, StyleSheet, TouchableOpacity, Image, ScrollView, TextInput, Alert } from "react-native";
 
-import { FontAwesome5 } from "react-native-vector-icons/FontAwesome5";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 
 const ProfileScreen = ({ navigation, route}: {navigation: any,route: any}) => {
@@ -34,7 +34,7 @@ const ProfileScreen = ({ navigation, route}: {navigation: any,route: any}) => {
         <View style={styles.menu}>
             <Text style={styles.tag}>Profile</Text>
             <TouchableOpacity activeOpacity={0.5} onPress={() => {signout();}} >
-                <FontAwesome5 name="power-off" style={{fontSize:25,color:"white"}}/>
+                <FontAwesome5 name="power-off" size = {25} color="white"/>
             </TouchableOpacity>
         </View>
         {/* End of navigation */}

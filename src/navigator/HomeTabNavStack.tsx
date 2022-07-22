@@ -7,7 +7,7 @@ import HomeScreen from '../screens/Home';
 
 const NavStack = createNativeStackNavigator();
 
-const HomeTabNavStack = () => {
+function HomeTabNavStack() {
   return (
     <NavStack.Navigator initialRouteName="Landing">
       <NavStack.Screen

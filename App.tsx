@@ -36,7 +36,7 @@ export default function App() {
         <MainStack.Screen name="ConfirmShovelerScreen" component={ConfirmShovelerScreen} />
         <MainStack.Screen name="BidPricing" component={BidPricing} />
         <MainStack.Screen name="Payment" component={Payment} />
-        <MainStack.Screen name="home" component={HomeScreen} />
+        <MainStack.Screen name="Home" component={HomeScreen} />
       </MainStack.Navigator>
     </NavigationContainer>
   );

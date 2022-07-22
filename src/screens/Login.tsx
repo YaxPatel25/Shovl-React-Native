@@ -61,7 +61,7 @@ const LoginScreen = ({ navigation }: {navigation: any}) => {
           </View>
           <Text style={styles.errorTextStyle}>{errorMsg}</Text>
           <View style={styles.SectionStyle}>
-            <TextInput style={styles.inputStyle} onChange={resetError} placeholder={"Enter email address"} onChangeText={setUsername} clearTextOnFocus />
+            <TextInput style={styles.inputStyle} onChange={resetError} autoCapitalize='none' placeholder={"Enter email address"} onChangeText={setUsername} clearTextOnFocus />
           </View>
           <View style={styles.SectionStyle}>
             <TextInput style={styles.inputStyle} onChange={resetError} onChangeText={setPassword} placeholder="Enter Password" clearTextOnFocus inlineImageLeft="favicon" secureTextEntry={true} />
