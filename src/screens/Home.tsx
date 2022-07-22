@@ -4,15 +4,16 @@ import { Text, View, StyleSheet, TouchableOpacity, Image, ScrollView, Alert } fr
 import { FlatList } from "react-native-gesture-handler";
 
 
-import { FontAwesome5 } from "react-native-vector-icons/FontAwesome5";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 
-const HomeTabStack = createNativeStackNavigator();
+//const HomeTabStack = createNativeStackNavigator();
 
 
 const HomeScreen = ({ navigation, route}: {navigation: any,route: any}) => {
   // const username = route.params.username;
 
+  
   const [posts, setPosts] = useState([
 	{ id:1, image: require('./../../assets/images/snowAdvertise.jpeg'), title: "Shoveler Needed", location: "22, Georgian Drive",postedBy:"User 1", description:"Desc 1" },
   { id:2,image: require('./../../assets/images/1.jpeg'), title: "Required Shoveler", location: "35, Maple Drive",postedBy:"User 2", description:"Desc 1" },
@@ -44,33 +45,18 @@ const HomeScreen = ({ navigation, route}: {navigation: any,route: any}) => {
           },
         ]);
       };
+
   return (
+
     <ScrollView>
-
-      <FlatList
-      data={
-        posts
-      }
-      renderItem={({item})=>(
-         <TouchableOpacity activeOpacity={0.5} onPress={() => navigation.navigate("AdvertiseDetails",item)} >
-                      <Image source={item.image}
-                            style={{width: 130, height:100}}/>
-                        <Text style={styles.titleText}>{item.title}</Text>
-                        <Text style={styles.locationText}>{item.location}</Text>
-                      </TouchableOpacity>
-      )}/>
-
-    {/* Start the navigation */}
     
     <View style={styles.wrapper}>
         <View style={styles.menu}>
             <Text style={styles.tag}>Home Screen</Text>
             <TouchableOpacity activeOpacity={0.5} onPress={() => {signout();}} >
-                <FontAwesome5 name="power-off" style={{fontSize:25,color:"white"}}/>
+                <FontAwesome5 name="power-off" size= {25} color ="white"/>
             </TouchableOpacity>
         </View>
-        {/* End of navigation */}
-        {/* Body part Starts */}
 
         <Text style={{color:"black",textAlign:"left",fontWeight:"bold",fontSize:16,padding:10}}>Hello</Text>
         <View style={styles.formElements}>
@@ -164,11 +150,9 @@ const HomeScreen = ({ navigation, route}: {navigation: any,route: any}) => {
                       </TouchableOpacity>   
                 </View>
             </View>     
-          </View>
+        </View>
     </View>
-</ScrollView>
-)
-
+</ScrollView>)
 }
 
 const styles = StyleSheet.create({

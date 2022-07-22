@@ -33,7 +33,6 @@ const LoginScreen = ({ navigation }: {navigation: any}) => {
     try {
       await singInUserFirebase(username, password)
         .then(userCred => {
-          Alert.alert('Login Success');
           console.log(userCred.user.uid);
           navigation.reset({
           index: 0,
