@@ -3,23 +3,18 @@ import { Text, View, StyleSheet, TouchableOpacity, ScrollView, Alert } from "rea
 
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
-
 const ConfirmShovelerScreen = ({ navigation, route}: {navigation: any,route: any}) => {
     const acceptShoveler = () => {
       Alert.alert("Attention \n", " You have accepted the request. \n\n You'll be redirect to Payment screen", [
             {
               text: "ok",
               onPress: () => {
-                navigation.reset({
-                  index: 0,
-                  routes: [{ name: "Payment" }],
-                });
+                  navigation.navigate("PaymentProcess")
               },
             },
             {
               text: "Cancel",
               onPress: () => {
-                  navigation.navigate("ConfirmShovelerScreen")//onPress={() => navigation.navigate("BidPricing")}
               },
               style: "cancel",
             },
@@ -55,7 +50,7 @@ const ConfirmShovelerScreen = ({ navigation, route}: {navigation: any,route: any
     <View style={styles.wrapper}>
         <View style={styles.menu}>
             <TouchableOpacity activeOpacity={0.5} 
-                  onPress={() => navigation.navigate("Home")}
+                  onPress={() => navigation.goBack()}
             >
                   <FontAwesome5 name="arrow-left" size = {22} color ="white"/>
             </TouchableOpacity>

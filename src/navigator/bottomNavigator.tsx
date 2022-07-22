@@ -21,7 +21,7 @@ export const BottomNavigator = ({ route }: {route: any}) => {
   //console.log("user name is ", username);
   return (
     <Tab.Navigator
-      initialRouteName={"home"}
+  initialRouteName={"home"}
       screenOptions={{
         headerTitleAlign: "center",
         headerStyle: {

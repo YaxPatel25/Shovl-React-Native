@@ -11,10 +11,7 @@ const Payment = ({ navigation, route}: {navigation: any,route: any}) => {
             {
                 text: "Yes",
                 onPress: () => {
-                  navigation.reset({
-                    index: 0,
-                    routes: [{ name: "ConfirmShovelerScreen" }],
-                  });
+                  navigation.goBack();
                 },
               },
           ]);
@@ -46,12 +43,6 @@ const Payment = ({ navigation, route}: {navigation: any,route: any}) => {
     
     <View style={styles.wrapper}>
         <View style={styles.menu}>
-        <TouchableOpacity activeOpacity={0.5} 
-            
-            onPress={() => navigation.navigate("ConfirmShovelerScreen")}
-          >
-            <FontAwesome5 name="arrow-left" size = {22} color ="white"/>
-        </TouchableOpacity>
             <Text style={styles.tag}>Payment</Text>
             <TouchableOpacity activeOpacity={0.5} onPress={() => {signout();
           }} ><FontAwesome5 name="power-off" size = {25} color="white"/></TouchableOpacity>
