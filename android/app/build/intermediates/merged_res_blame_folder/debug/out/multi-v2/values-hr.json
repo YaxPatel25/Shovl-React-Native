@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/nisalpadukka/Desktop/react-native/shovl_react_native_cli/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml",
+            "outputFile": "/Users/nisalpadukka/Desktop/shovl_react_native_cli/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml",
             "map": [
                 {
                     "source": "/Users/nisalpadukka/.gradle/caches/transforms-3/60053285b90eb22a3b794aedc1014936/transformed/jetified-play-services-base-18.0.1/res/values-hr/values.xml",

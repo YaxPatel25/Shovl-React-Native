@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/nisalpadukka/Desktop/react-native/shovl_react_native_cli/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "/Users/nisalpadukka/Desktop/shovl_react_native_cli/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/Users/nisalpadukka/.gradle/caches/transforms-3/eddf792304eb3f90b86db9bc0507e000/transformed/jetified-play-services-auth-20.2.0/res/values-watch-v20/values.xml",

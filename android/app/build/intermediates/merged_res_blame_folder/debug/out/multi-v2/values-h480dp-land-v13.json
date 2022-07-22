@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/nisalpadukka/Desktop/react-native/shovl_react_native_cli/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "/Users/nisalpadukka/Desktop/shovl_react_native_cli/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
                     "source": "/Users/nisalpadukka/.gradle/caches/transforms-3/d58622080b342836d500a7133d91a28a/transformed/material-1.1.0/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",

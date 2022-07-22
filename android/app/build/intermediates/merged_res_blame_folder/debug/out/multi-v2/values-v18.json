@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/nisalpadukka/Desktop/react-native/shovl_react_native_cli/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
+            "outputFile": "/Users/nisalpadukka/Desktop/shovl_react_native_cli/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
             "map": [
                 {
                     "source": "/Users/nisalpadukka/.gradle/caches/transforms-3/b587bde9d1890bd56c472f21326daf95/transformed/appcompat-1.4.1/res/values-v18/values-v18.xml",
