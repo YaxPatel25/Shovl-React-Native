@@ -4,7 +4,7 @@
 Shovl is a mobile application implemented using react-native that provide snow clearing service. This app only acts as a mediator between actual shoveler and the customer that needs their snow removed from their property.
 
 
-** Changes Made**
+# **Changes Made**
 
 * App was ejected from EXPO to React Native CLI
 * Firebase Intergration was added to both Signup and Login
