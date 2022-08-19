@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { StyleSheet, TextInput, View, Text, Image, TouchableOpacity, KeyboardAvoidingView,  Alert} from "react-native";
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import {singInUserFirebase} from '../services/authApi';
-
+import {fetchUser, singInUserFirebase} from '../services/AuthApi';
+import {useAppData} from '../context/AppState';
+import {User} from '../model/UserModel';
+import {getUser} from '../services/DbApi';
+import auth from '@react-native-firebase/auth';
 
 
 const LoginScreen = ({ navigation }: {navigation: any}) => {
@@ -11,6 +14,7 @@ const LoginScreen = ({ navigation }: {navigation: any}) => {
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState<Boolean>(false);
   const [errorMsg, setErrorMsg] = useState<string>('');
+  const { setActiveUser, activeUser } = useAppData();
 
   const resetError = () => {
     setError(false);
@@ -36,7 +40,6 @@ const LoginScreen = ({ navigation }: {navigation: any}) => {
           console.log(userCred.user.uid);
           navigation.reset({
           index: 0,
-          //routes: [{ name: "bottomNav"}],
           routes: [{ name: "bottomNav", params: { username } }],
         });
         })
@@ -46,9 +49,6 @@ const LoginScreen = ({ navigation }: {navigation: any}) => {
     } catch (error) {
       Alert.alert(`Error ${error}`);
     }
-
-    
-
   }
 
 

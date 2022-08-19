@@ -45,11 +45,6 @@ const AdvertiseDetails = ({ navigation, route}: {navigation: any,route: any}) =>
         {/* Body part Starts */}
         <View style={styles.formElements}>
         <View style={styles.labelName}>
-            <Text style={{ width: "30%",fontWeight:"bold",fontSize:18 }}>Posted By:</Text>
-            <Text style={{ width: "70%",fontSize:16 }}>{postDetails.postedBy}</Text>
-                
-        </View>
-        <View style={styles.labelName}>
             <Image
                     source={require('./../../assets/images/snowAdvertise.jpeg')}
                     style={{width: "90%", height:150,marginLeft:10}}

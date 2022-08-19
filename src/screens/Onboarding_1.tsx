@@ -19,6 +19,7 @@ export default function Onboarding_1({ navigation }: {navigation: any}) {
             Get Started
           </Text>
         </TouchableOpacity>
+
       </View>
     </View>
   );

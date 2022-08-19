@@ -3,6 +3,7 @@ import { Text, View, StyleSheet, TouchableOpacity, Image } from "react-native";
 import AntIcon from "react-native-vector-icons/AntDesign";
 import Encypto from 'react-native-vector-icons/Entypo';
 
+
 export default function Onboarding_3({ navigation }: {navigation: any}) {
   return (
     <View style={styles.wrapper}>
@@ -20,7 +21,7 @@ export default function Onboarding_3({ navigation }: {navigation: any}) {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.buttonStyle}>
-          <Encypto name="dots-three-horizontal" size={32} color="#4A57A3" />
+          <Encypto name="progress-full" size={32} color="#4A57A3" />
         </TouchableOpacity>
 
         <TouchableOpacity

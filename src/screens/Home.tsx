@@ -2,25 +2,28 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React, { useState, useEffect } from "react";
 import { Text, View, SafeAreaView, StyleSheet, TouchableOpacity, Image, ScrollView, Alert } from "react-native";
 import { FlatList } from "react-native-gesture-handler";
-
-
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
+import auth from '@react-native-firebase/auth';
+import { GetAllPosts} from "../services/DbApi";
+import { PostModel } from "../model/PostModel";
+import {useIsFocused} from '@react-navigation/native';
 
-
-const samplePosts = [
-	{ id:1, image: require('./../../assets/images/snowAdvertise.jpeg'), title: "Shoveler Needed", location: "22, Georgian Drive",postedBy:"User 1", description:"Desc 1" },
-  { id:2,image: require('./../../assets/images/1.jpeg'), title: "Required Shoveler", location: "35, Maple Drive",postedBy:"User 2", description:"Desc 1" },
-  { id:3,image: require('./../../assets/images/1.jpeg'), title: "Required Shoveler", location: "35, Maple Drive",postedBy:"User 3" , description:"Desc 1"},
-  { id:4,image: require('./../../assets/images/2.jpeg'), title: "Hiring Hiring Hiring", location: "Barrie, Ontario" ,postedBy:"User 4", description:"Desc 1"},
-  { id:5,image: require('./../../assets/images/3.jpeg'), title: "Snow Removal", location: "244, Georgian Drive" ,postedBy:"User 5", description:"Desc 1"},
-  { id:6,image: require('./../../assets/images/4.jpeg'), title: "Snow Clearing needed", location: "21 Emcarr Drive" ,postedBy:"User 6", description:"Desc 1"},
-  { id:7,image: require('./../../assets/images/5.jpeg'), title: "Shovelers required", location: "30 Glenda Road" ,postedBy:"User 7", description:"Desc 1"}
+const sampleImages = [
+	{ image:require('./../../assets/images/snowAdvertise.jpeg')},
+  { image:require('./../../assets/images/1.jpeg')},
+  { image:require('./../../assets/images/1.jpeg')},
+  { image:require('./../../assets/images/2.jpeg')},
+  { image:require('./../../assets/images/3.jpeg')},
+  { image:require('./../../assets/images/4.jpeg')},
+  { image:require('./../../assets/images/5.jpeg')}
 ];
 
 
 const HomeScreen = ({ navigation, route}: {navigation: any,route: any}) => {
-
-  const [posts, setPosts] = useState(samplePosts); 
+  const [loading, setLoading] = useState(true);
+  const [images, setSampleImages] = useState(sampleImages); 
+  const [PostList, setPostsList] = useState<PostModel[]>([]);
+  const isFocused = useIsFocused();
 
   const signout = () => {
         Alert.alert("Attention \n", " Do you really want to sign out!", [
@@ -43,43 +46,62 @@ const HomeScreen = ({ navigation, route}: {navigation: any,route: any}) => {
         ]);
   };
 
-  const renderRow = ({item}) => {
-    return (
-    <View style={styles.item}>
-    <TouchableOpacity activeOpacity={0.5} onPress={() => navigation.navigate("AdvertiseDetails",item)} >
-                  <Image source={item.image}
-                        style={{width: 130, height:100}}/>
-                    <Text style={styles.titleText}>{item.title}</Text>
-                    <Text style={styles.locationText}>{item.location}</Text>
-    </TouchableOpacity>
+  const getPosts = async () => {
+    var myTasks = await GetAllPosts();
+    PostList.splice(0);
+    if (myTasks != null) {
+      myTasks.forEach((task: PostModel) => {
+        PostList.push(task);
+        console.log(task)
+      });
+      setLoading(false);
+    }
+  };
 
-  </View>);
+
+const renderRowReal = ({item}) => {
+  return (
+  <View style={styles.item}>
+  <Image source={sampleImages[Math.floor(Math.random() * sampleImages.length)].image} style={{width: 130, height:100}}/>
+  <TouchableOpacity activeOpacity={0.5} onPress={() => navigation.navigate("AdvertiseDetails",item)} >
+                  <Text style={styles.titleText}>{item.title}</Text>
+                  <Text style={styles.locationText}>{item.location}</Text>
+  </TouchableOpacity>
+</View>);
 };
 
   useEffect(() => {
-    //populating Post data
-    setPosts(samplePosts)
+
   });
+
+  useEffect(() => {
+    if (isFocused) {
+      getPosts()
+      setSampleImages(sampleImages)
+    }
+  }, [isFocused]);
 
   return (
 
     <SafeAreaView style={{flex: 1}}>
       <View style={styles.wrapper}>
-        
           <View style={styles.menu}>
                   <Text style={styles.tag}>Home Screen</Text>
                   <TouchableOpacity activeOpacity={0.5} onPress={() => {signout();}} >
                       <FontAwesome5 name="power-off" size= {25} color ="white"/>
                   </TouchableOpacity>
               </View>
-              <Text style={{color:"black",textAlign:"left",fontWeight:"bold",fontSize:16,padding:10}}>Hello</Text>
+              <Text style={{color:"black",textAlign:"left",fontWeight:"bold",fontSize:16,padding:10}}>Hello {auth().currentUser?.displayName}</Text>
             <View style={styles.wrapper}>
             
+            {loading ? (
+            <Text>No items</Text>
+          ) : (
             <FlatList
             numColumns={2}
-            data={ posts }
-            renderItem={renderRow}
-            />
+            data={ PostList }
+            renderItem={renderRowReal}
+            />)}
             </View>
       </View>
 </SafeAreaView>)

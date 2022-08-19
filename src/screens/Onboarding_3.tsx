@@ -1,8 +1,7 @@
 import React from "react";
 import { Text, View, StyleSheet, TouchableOpacity, Image } from "react-native";
-
-import AntIcon from 'react-native-vector-icons/AntDesign';
 import Encypto from 'react-native-vector-icons/Entypo';
+import AntIcon from 'react-native-vector-icons/AntDesign';
 
 export default function Onboarding_3({ navigation }: {navigation: any}) {
   return (
@@ -10,6 +9,8 @@ export default function Onboarding_3({ navigation }: {navigation: any}) {
       <Image style={styles.image} source={require("../../assets/images/snow.png")} />
       <Text style={{ fontSize: 24, fontWeight: "bold", color: "#126FB2" }}>Clear the Snow </Text>
       <Text style={styles.smallText}>Add post of the location or property where you want snow to be cleared without any hassle</Text>
+
+
 
       <View style={styles.bottomArrows}>
         <TouchableOpacity
@@ -21,7 +22,7 @@ export default function Onboarding_3({ navigation }: {navigation: any}) {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.buttonStyle}>
-          <Encypto name="dots-three-horizontal" size={32} color="#4A57A3" />
+          <Encypto name="progress-two" size={32} color="#4A57A3" />
         </TouchableOpacity>
 
         <TouchableOpacity

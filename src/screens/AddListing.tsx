@@ -1,21 +1,57 @@
 import React, { useState } from "react";
-import { Text, View, StyleSheet, TouchableOpacity, Image, ScrollView, SafeAreaView, ImageBackground, TextInput, Alert } from "react-native";
-
+import { Text, View, Button, StyleSheet, TouchableOpacity, Image, ScrollView, SafeAreaView, ImageBackground, TextInput, Alert } from "react-native";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
-
+import DateTimePicker from '../components/DateTimePicker';
+import { addPost} from "../services/DbApi";
+import { PostModel } from "../model/PostModel";
 
 const AddListing = ({ navigation, route}: {navigation: any,route: any}) => {
       const [title, setTitle] = useState<string>('');
       const [description, setDescription] = useState<string>('');
-      const [addres, setAddress] = useState<string>('');
+      const [address, setAddress] = useState<string>('');
       const [fromDate, setFromDate] = useState<string>('');
       const [toDate, setToDate] = useState<string>('');
       const [fromTime, setFromTime] = useState<string>('');
       const [toTime, setToTime] = useState<string>('');
-      const [images, setImages] = useState([]);
+
+      const getFromDateTime = (fromDate: Date) => {
+        if (fromDate != null) {
+          setFromTime(fromDate.toLocaleTimeString())
+          setFromDate(fromDate.toLocaleDateString())
+        }
+      };
+
+      const getToDateTime = (toDate: Date) => {
+        if (toDate != null) {
+          setToTime(toDate.toLocaleTimeString())
+          setToDate(toDate.toLocaleDateString())
+        }
+      };
+
+
+    const publishPost = () => {
+      if (title == '' && description == '' && address == "") {
+        Alert.alert('Plsease Fill in the fields');
+      } 
+      else{
+        var post: PostModel = {
+          title: title.toString(),
+          description: description.toString(),
+          location:address.toString(),
+          dateFrom: fromDate.toString(),
+          dateTo: toDate.toString()
+        };
+        console.log(post);
+        addPost(post).then((result: boolean) => {
+            navigation.navigate('bottomNav');
+        });
+      }
+  }
+  
+    
 
     const addListings = () => {
-        //call firestore database here to store data in database
+       publishPost();
        Alert.alert("Added Successfully! You can see your post in Home Screen")
 
       };
@@ -78,56 +114,38 @@ const AddListing = ({ navigation, route}: {navigation: any,route: any}) => {
                     onChangeText={setDescription}
                     placeholder=" Description of the property."
                 /></View>
-            <View style={styles.labelName}>
-                <Text style={{fontWeight:"bold",fontSize:18 ,textAlign:"center",width:"50%",marginVertical:7}}>From Date:</Text>
-                <Text style={{fontWeight:"bold",fontSize:18 ,textAlign:"center",width:"50%",marginVertical:7}}>To Date:</Text>
-                
+            <View style={styles.topheading}>
+                <Text style={{fontWeight:"bold",fontSize:18 ,textAlign:"left",width:"50%",marginVertical:7}}>From:</Text>                
             </View>
             <View style={styles.labelName}>
             <TextInput
                     style={styles.textInput}
-                    onChangeText={setFromDate}
-                    placeholder="mm/dd/yyy"
+                    value = {fromDate}
+                    placeholder="MM/DD/YYYY"
                 />
                 <TextInput
                     style={styles.textInput}
-                    onChangeText={setToDate}
-                    placeholder="mm/dd/yyy"
+                    value = {fromTime}
+                    placeholder="HH:MM"
                 />
+                <DateTimePicker dateTime={getFromDateTime} />
             </View>
-            <View style={styles.labelName}>
-            <Text style={{fontWeight:"bold",fontSize:18 ,textAlign:"center",width:"50%",marginVertical:7}}>From Time:</Text>
-            <Text style={{fontWeight:"bold",fontSize:18 ,textAlign:"center",width:"50%",marginVertical:7}}>To Time:</Text>
-                
+            <View style={styles.topheading}>
+                <Text style={{fontWeight:"bold",fontSize:18 ,textAlign:"left",width:"50%",marginVertical:7}}>To:</Text>                
             </View>
             <View style={styles.labelName}>
             <TextInput
                     style={styles.textInput}
-                    onChangeText={setFromTime}
-                    placeholder="HH:MM"
+                    value = {toDate}
+                    placeholder="MM/DD/YYYY"
                 />
                 <TextInput
                     style={styles.textInput}
-                    onChangeText={setToTime}
+                    value = {toTime}
                     placeholder="HH:MM"
                 />
+                <DateTimePicker dateTime={getToDateTime} />
             </View>
-            <View style={styles.labelName}>
-                <Text style={{ width: "85%",fontWeight:"bold",fontSize:18,marginVertical:10,marginRight:"15%"}}>Add Pictures:</Text>
-            </View>
-            { <View style={styles.labelName}>
-            
-                <Image
-                    source={require('./../../assets/images/snowAdvertise.jpeg')}
-                    style={{width: 100, height:100,marginLeft:10}}
-                />
-                <Image
-                    source={require('./../../assets/images/snowAdvertise1.jpeg')}
-                    style={{width: 100, height:100,marginLeft:20}}
-                />
-                
-                 <FontAwesome5 name="plus" color= "black" opacity = {0.} size={80} marginLeft={20}/>
-            </View> }
             <View style={styles.flexrow}>
                 <TouchableOpacity activeOpacity={0.5}
           onPress={() => {
@@ -165,6 +183,12 @@ labelName: {
         justifyContent: "center",
         alignItems: "center"
         },
+
+topheading: {
+          flexDirection: "row",
+          width: "100%",
+          paddingLeft: 15
+},
 menu: {
         flexDirection: "row",
         width: "100%",

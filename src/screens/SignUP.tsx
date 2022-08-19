@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { StyleSheet, TextInput, View, Text, ScrollView, TouchableOpacity, KeyboardAvoidingView, Alert } from "react-native";
 import  FontAwesome5  from "react-native-vector-icons/FontAwesome5";
-import { singUpUserFirebase } from "../services/authApi";
+import { signupUserFirebase } from "../services/AuthApi";
+import {addUser} from '../services/DbApi';
 
 const SignUpScreen = ({ navigation }: {navigation: any}) => {
   const [name, setName] = useState<string>("");
@@ -46,15 +47,19 @@ const SignUpScreen = ({ navigation }: {navigation: any}) => {
     setError(false);
 
     try {
-      await singUpUserFirebase(email, password,name)
-        .then(userCred => {
-          Alert.alert('Sign up Success');
-          console.log(userCred.user.uid);
-        })
-        .catch(error => {
-          Alert.alert(`Error ${error}`);
-        });
+      await signupUserFirebase(email, password, name)
+      .then((userCredentials)=>{
+        if(userCredentials.user){
+          userCredentials.user.updateProfile({
+            displayName: name
+          })
+        }
+      })
+      .catch(function(error) {
+        console.log("error setting" + error)
+      });
     } catch (error) {
+      console.log(error)
       Alert.alert(`Error ${error}`);
     }
 
@@ -112,10 +117,10 @@ const SignUpScreen = ({ navigation }: {navigation: any}) => {
           </View>
           <Text style={styles.errorTextStyle}>{errorMsg}</Text>
           <View style={styles.SectionStyle}>
-            <TextInput style={styles.inputStyle} onChange={resetError} placeholder={"Enter Name"} onChangeText={setName} clearTextOnFocus />
+            <TextInput style={styles.inputStyle} onChange={resetError} autoCapitalize='none' placeholder={"Enter Name"} onChangeText={setName} clearTextOnFocus />
           </View>
           <View style={styles.SectionStyle}>
-            <TextInput style={styles.inputStyle} onChange={resetError} onChangeText={setEmail} placeholder="Enter Email" clearTextOnFocus />
+            <TextInput style={styles.inputStyle} onChange={resetError} autoCapitalize='none' onChangeText={setEmail} placeholder="Enter Email" clearTextOnFocus />
           </View>
           <View style={styles.SectionStyle}>
             <TextInput style={styles.inputStyle} onChange={resetError} onChangeText={setPassword} placeholder="Password" clearTextOnFocus secureTextEntry={true} />

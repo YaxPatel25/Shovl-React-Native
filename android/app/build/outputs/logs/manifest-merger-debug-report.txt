@@ -9,8 +9,10 @@ MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/nisalpadukka/.gradle/c
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/nisalpadukka/.gradle/caches/transforms-3/18eb0dba091293a07889d5d48aff89a2/transformed/jetified-flipper-network-plugin-0.125.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/nisalpadukka/.gradle/caches/transforms-3/22466eaced01fd2ca71877e81fdc8f6f/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:8:1-15:12
 MERGED from [:react-native-vector-icons] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_datetimepicker] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-community_masked-view] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-community/masked-view/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-firebase_auth] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-firebase_firestore] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/firestore/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-firebase_app] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-32:12
 MERGED from [:react-native-gesture-handler] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-safe-area-context] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
@@ -34,6 +36,8 @@ MERGED from [com.facebook.fresco:memory-type-ashmem:2.6.0] /Users/nisalpadukka/.
 MERGED from [com.facebook.fresco:imagepipeline:2.6.0] /Users/nisalpadukka/.gradle/caches/transforms-3/ec6ac937088b53c818974af869b8d477/transformed/jetified-imagepipeline-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] /Users/nisalpadukka/.gradle/caches/transforms-3/fba5dd354d23815a54b61f685ba4e809/transformed/jetified-nativeimagetranscoder-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/nisalpadukka/.gradle/caches/transforms-3/117e0aace04e2003ce9c43ccf468c1c4/transformed/jetified-imagepipeline-base-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:2:1-26:12
+MERGED from [io.grpc:grpc-android:1.44.1] /Users/nisalpadukka/.gradle/caches/transforms-3/2dd061ba6255d7a31c707629888b4dca/transformed/jetified-grpc-android-1.44.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.1.0] /Users/nisalpadukka/.gradle/caches/transforms-3/d58622080b342836d500a7133d91a28a/transformed/material-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/nisalpadukka/.gradle/caches/transforms-3/b587bde9d1890bd56c472f21326daf95/transformed/appcompat-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/nisalpadukka/.gradle/caches/transforms-3/986b8f2d3510fe170c18869f9bd7866c/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
@@ -52,6 +56,8 @@ MERGED from [com.google.android.gms:play-services-auth:20.2.0] /Users/nisalpaduk
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] /Users/nisalpadukka/.gradle/caches/transforms-3/c64d5971e9d6acd9013343d7faf539d4/transformed/jetified-play-services-auth-api-phone-18.0.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] /Users/nisalpadukka/.gradle/caches/transforms-3/51d602e816812fd9567aa4530ba0c4ea/transformed/jetified-play-services-auth-base-18.0.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/0b45da689634fdef42be8ffa922ce637/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/80710103518e8bd2d1fa64b8ce073273/transformed/jetified-firebase-appcheck-interop-16.0.0/AndroidManifest.xml:15:1-26:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/nisalpadukka/.gradle/caches/transforms-3/8e59cee9eb0b9c32845363fccdb49ec5/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/nisalpadukka/.gradle/caches/transforms-3/60053285b90eb22a3b794aedc1014936/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/c73d4a0fa058947a73c96d1257cc7bca/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/nisalpadukka/.gradle/caches/transforms-3/e7634b6b3d181f3cc711c858a8bcdfe7/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:15:1-40:12
@@ -87,6 +93,7 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/6789e63a6c975019de7533f562633ca5/transformed/jetified-firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
 MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/nisalpadukka/.gradle/caches/transforms-3/f77f44bd1c5d1cbf1ad3c710575e1c04/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/nisalpadukka/.gradle/caches/transforms-3/6fc51789806c8b4e58e07f99af711251/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/e10959dcb8a201301fb176388e32fdee/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 INJECTED from /Users/nisalpadukka/Desktop/shovl_react_native_cli/android/app/src/debug/AndroidManifest.xml:2:1-13:12
 INJECTED from /Users/nisalpadukka/Desktop/shovl_react_native_cli/android/app/src/debug/AndroidManifest.xml:2:1-13:12
 INJECTED from /Users/nisalpadukka/Desktop/shovl_react_native_cli/android/app/src/debug/AndroidManifest.xml:2:1-13:12
@@ -113,6 +120,8 @@ MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/nisalpadukka/.gradle/c
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/nisalpadukka/.gradle/caches/transforms-3/215a5cd1b4e0497055696b518d0c348d/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:15:5-67
 MERGED from [:react-native-firebase_auth] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
 MERGED from [:react-native-firebase_auth] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/nisalpadukka/.gradle/caches/transforms-3/35d4d65d9ca004400ade2694902943be/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/nisalpadukka/.gradle/caches/transforms-3/35d4d65d9ca004400ade2694902943be/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:23:5-67
 	android:name
@@ -121,12 +130,16 @@ application
 ADDED from /Users/nisalpadukka/Desktop/shovl_react_native_cli/android/app/src/main/AndroidManifest.xml:6:5-25:19
 MERGED from /Users/nisalpadukka/Desktop/shovl_react_native_cli/android/app/src/main/AndroidManifest.xml:6:5-25:19
 MERGED from /Users/nisalpadukka/Desktop/shovl_react_native_cli/android/app/src/main/AndroidManifest.xml:6:5-25:19
+MERGED from [:react-native-community_datetimepicker] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-20
+MERGED from [:react-native-community_datetimepicker] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-20
 MERGED from [:react-native-firebase_app] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-30:19
 MERGED from [:react-native-firebase_app] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-30:19
 MERGED from [com.facebook.react:react-native:0.69.1] /Users/nisalpadukka/.gradle/caches/transforms-3/9a0d62fcdb0a5e06b2ee8b62e2093f57/transformed/jetified-react-native-0.69.1-debug/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-native:0.69.1] /Users/nisalpadukka/.gradle/caches/transforms-3/9a0d62fcdb0a5e06b2ee8b62e2093f57/transformed/jetified-react-native-0.69.1-debug/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.soloader:soloader:0.10.3] /Users/nisalpadukka/.gradle/caches/transforms-3/43f8bec56959d30233a30b0d4d2931fc/transformed/jetified-soloader-0.10.3/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.10.3] /Users/nisalpadukka/.gradle/caches/transforms-3/43f8bec56959d30233a30b0d4d2931fc/transformed/jetified-soloader-0.10.3/AndroidManifest.xml:11:5-20
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.android.material:material:1.1.0] /Users/nisalpadukka/.gradle/caches/transforms-3/d58622080b342836d500a7133d91a28a/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/nisalpadukka/.gradle/caches/transforms-3/d58622080b342836d500a7133d91a28a/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/nisalpadukka/.gradle/caches/transforms-3/35d4d65d9ca004400ade2694902943be/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:26:5-71:19
@@ -135,6 +148,8 @@ MERGED from [com.google.android.gms:play-services-auth:20.2.0] /Users/nisalpaduk
 MERGED from [com.google.android.gms:play-services-auth:20.2.0] /Users/nisalpadukka/.gradle/caches/transforms-3/eddf792304eb3f90b86db9bc0507e000/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/0b45da689634fdef42be8ffa922ce637/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/0b45da689634fdef42be8ffa922ce637/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/80710103518e8bd2d1fa64b8ce073273/transformed/jetified-firebase-appcheck-interop-16.0.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/80710103518e8bd2d1fa64b8ce073273/transformed/jetified-firebase-appcheck-interop-16.0.0/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/nisalpadukka/.gradle/caches/transforms-3/60053285b90eb22a3b794aedc1014936/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/nisalpadukka/.gradle/caches/transforms-3/60053285b90eb22a3b794aedc1014936/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/c73d4a0fa058947a73c96d1257cc7bca/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
@@ -217,10 +232,14 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/nisalpad
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/nisalpadukka/.gradle/caches/transforms-3/22466eaced01fd2ca71877e81fdc8f6f/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [:react-native-vector-icons] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-vector-icons] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_datetimepicker] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_datetimepicker] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-community/masked-view/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-community/masked-view/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-firebase_auth] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-firebase_auth] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-firebase_firestore] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/firestore/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-firebase_firestore] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/firestore/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-firebase_app] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-8:41
 MERGED from [:react-native-firebase_app] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-8:41
 MERGED from [:react-native-gesture-handler] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -267,6 +286,10 @@ MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] /Users/nisalpadukk
 MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] /Users/nisalpadukka/.gradle/caches/transforms-3/fba5dd354d23815a54b61f685ba4e809/transformed/jetified-nativeimagetranscoder-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/nisalpadukka/.gradle/caches/transforms-3/117e0aace04e2003ce9c43ccf468c1c4/transformed/jetified-imagepipeline-base-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/nisalpadukka/.gradle/caches/transforms-3/117e0aace04e2003ce9c43ccf468c1c4/transformed/jetified-imagepipeline-base-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.44.1] /Users/nisalpadukka/.gradle/caches/transforms-3/2dd061ba6255d7a31c707629888b4dca/transformed/jetified-grpc-android-1.44.1/AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.44.1] /Users/nisalpadukka/.gradle/caches/transforms-3/2dd061ba6255d7a31c707629888b4dca/transformed/jetified-grpc-android-1.44.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.1.0] /Users/nisalpadukka/.gradle/caches/transforms-3/d58622080b342836d500a7133d91a28a/transformed/material-1.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0] /Users/nisalpadukka/.gradle/caches/transforms-3/d58622080b342836d500a7133d91a28a/transformed/material-1.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/nisalpadukka/.gradle/caches/transforms-3/b587bde9d1890bd56c472f21326daf95/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
@@ -303,6 +326,10 @@ MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] /Users/nisal
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.1] /Users/nisalpadukka/.gradle/caches/transforms-3/51d602e816812fd9567aa4530ba0c4ea/transformed/jetified-play-services-auth-base-18.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/0b45da689634fdef42be8ffa922ce637/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/0b45da689634fdef42be8ffa922ce637/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/80710103518e8bd2d1fa64b8ce073273/transformed/jetified-firebase-appcheck-interop-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/80710103518e8bd2d1fa64b8ce073273/transformed/jetified-firebase-appcheck-interop-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/nisalpadukka/.gradle/caches/transforms-3/8e59cee9eb0b9c32845363fccdb49ec5/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/nisalpadukka/.gradle/caches/transforms-3/8e59cee9eb0b9c32845363fccdb49ec5/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/nisalpadukka/.gradle/caches/transforms-3/60053285b90eb22a3b794aedc1014936/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/nisalpadukka/.gradle/caches/transforms-3/60053285b90eb22a3b794aedc1014936/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/c73d4a0fa058947a73c96d1257cc7bca/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
@@ -373,6 +400,8 @@ MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/nisalpadukka/.gradle/cache
 MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/nisalpadukka/.gradle/caches/transforms-3/f77f44bd1c5d1cbf1ad3c710575e1c04/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/nisalpadukka/.gradle/caches/transforms-3/6fc51789806c8b4e58e07f99af711251/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/nisalpadukka/.gradle/caches/transforms-3/6fc51789806c8b4e58e07f99af711251/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/e10959dcb8a201301fb176388e32fdee/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/nisalpadukka/.gradle/caches/transforms-3/e10959dcb8a201301fb176388e32fdee/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 INJECTED from /Users/nisalpadukka/Desktop/shovl_react_native_cli/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/nisalpadukka/Desktop/shovl_react_native_cli/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -401,6 +430,10 @@ ADDED from [:react-native-firebase_auth] /Users/nisalpadukka/Desktop/shovl_react
 		ADDED from [:react-native-firebase_auth] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [:react-native-firebase_auth] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:13:5-79
+MERGED from [io.grpc:grpc-android:1.44.1] /Users/nisalpadukka/.gradle/caches/transforms-3/2dd061ba6255d7a31c707629888b4dca/transformed/jetified-grpc-android-1.44.1/AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.44.1] /Users/nisalpadukka/.gradle/caches/transforms-3/2dd061ba6255d7a31c707629888b4dca/transformed/jetified-grpc-android-1.44.1/AndroidManifest.xml:9:5-79
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/nisalpadukka/.gradle/caches/transforms-3/35d4d65d9ca004400ade2694902943be/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/nisalpadukka/.gradle/caches/transforms-3/35d4d65d9ca004400ade2694902943be/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:24:5-79
 	android:name
@@ -413,6 +446,8 @@ ADDED from [:react-native-firebase_app] /Users/nisalpadukka/Desktop/shovl_react_
 		ADDED from [:react-native-firebase_app] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-63
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:react-native-firebase_app] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/nisalpadukka/.gradle/caches/transforms-3/35d4d65d9ca004400ade2694902943be/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-auth:21.0.6] /Users/nisalpadukka/.gradle/caches/transforms-3/35d4d65d9ca004400ade2694902943be/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/nisalpadukka/.gradle/caches/transforms-3/e7634b6b3d181f3cc711c858a8bcdfe7/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:33:9-37:35
@@ -441,6 +476,12 @@ ADDED from [:react-native-firebase_app] /Users/nisalpadukka/Desktop/shovl_react_
 		ADDED from [:react-native-firebase_app] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-35
 	android:name
 		ADDED from [:react-native-firebase_app] /Users/nisalpadukka/Desktop/shovl_react_native_cli/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-88
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:24.2.1] /Users/nisalpadukka/.gradle/caches/transforms-3/f833cef918428d40744acdfe5d6f0abe/transformed/jetified-firebase-firestore-24.2.1/AndroidManifest.xml:21:17-111
 activity#com.google.firebase.auth.internal.GenericIdpActivity
 ADDED from [com.google.firebase:firebase-auth:21.0.6] /Users/nisalpadukka/.gradle/caches/transforms-3/35d4d65d9ca004400ade2694902943be/transformed/jetified-firebase-auth-21.0.6/AndroidManifest.xml:27:9-44:20
 	android:excludeFromRecents
