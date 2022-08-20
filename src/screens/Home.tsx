@@ -70,9 +70,6 @@ const renderRowReal = ({item}) => {
 </View>);
 };
 
-  useEffect(() => {
-
-  });
 
   useEffect(() => {
     if (isFocused) {

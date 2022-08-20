@@ -31,7 +31,7 @@ const AddListing = ({ navigation, route}: {navigation: any,route: any}) => {
 
     const publishPost = () => {
       if (title == '' && description == '' && address == "") {
-        Alert.alert('Plsease Fill in the fields');
+        Alert.alert('Please Fill in the fields');
       } 
       else{
         var post: PostModel = {
@@ -39,7 +39,9 @@ const AddListing = ({ navigation, route}: {navigation: any,route: any}) => {
           description: description.toString(),
           location:address.toString(),
           dateFrom: fromDate.toString(),
-          dateTo: toDate.toString()
+          dateTo: toDate.toString(),
+          timeFrom: fromTime.toString(),
+          timeTo: toTime.toString()
         };
         console.log(post);
         addPost(post).then((result: boolean) => {
